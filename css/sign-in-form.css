@@ -175,6 +175,7 @@ header .flex {
     border: none;
     outline: none;
     color: var(--text-clr);
+    font-size: 1rem;
 }
 
 .form-control label {
