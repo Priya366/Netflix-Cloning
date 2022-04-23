@@ -1,0 +1,5 @@
+button wala red color : #e50914;
+downloading me jo color hai : #0071eb;
+do div ke bich me jo border hai uska color : #222;
+faq me jo background color hai : #303030;
+font khud se jo badhiya lage wo laga lena

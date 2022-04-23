@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Login Page</title>
+    <link rel="stylesheet" href="css/sign-in-form.css">
+
+    <!-- 5.15.4 version icons  -->
+    <script src="https://kit.fontawesome.com/0971a59bcd.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!-- header  -->
+    <header>
+        <div class="container">
+            <div class="flex">
+                <div class="logo">
+                    <a href="index.html">
+                        NETFLIX
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- main  -->
+    <main>
+        <section>
+            <div class="container">
+                <div class="main-container flex">
+                    <h1>Sign In</h1>
+                    <form action="" method="get">
+                        <div class="form-control">
+                            <input type="text" autocomplete="email" id="email" class="flex" name="email/number" required>
+                            <label>Email or phone number</label>
+                            <span id="error-email" class="form-error-text">
+                                Please enter a valid email address.
+                            </span>
+                        </div>
+                        <div class="form-control">
+                            <input type="password" autocomplete="current-password" id="password" name="password" class="flex" required>
+                            <label>Password</label>
+                            <span id="error-password" class="form-error-text">
+                                Your password must contain between 4 and 60 characters.
+                            </span>
+                        </div>
+                        <div class="form-control-formbtn">
+                            <input type="submit" class="flex" value="Sign in">
+                        </div>
+                        <div class="support flex">
+                            <div>
+                                <span><input type="checkbox" checked></span>Remember me
+                            </div>
+                            <div>
+                                <span>Need help?</span>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="main-footer">
+                        <div class="login-facebook-main-footer">
+                            <a href=""><i class="fab fa-facebook-square"></i>Login with Facebook</a>
+                        </div>
+                        <div class="new-netflix-main-footer">
+                            <p>New to Netflix?<a href="">Sign up now.</a></p>
+                        </div>
+                        <div class="learn-more-main-footer">
+                            <p>This page is protected by Google reCAPTCHA to ensure you're not a bot.<span class="read-more" id="read-more">
+                                The information collected by Google reCAPTCHA is subject to the Google Privacy Policy and Terms of Service, and is used for providing, maintaining, and improving the reCAPTCHA service and for general security purposes (it is not used for personalised
+                                advertising by Google).
+                            </span><button href="" id="readBtn">Learn more.</button></p>
+
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- footer  -->
+
+    <footer>
+        <div class="container">
+            <p>Questions? Call 000-800-040-1843</p>
+            <div class="grid-container">
+                <div class="grid-list flex">
+                    <a href="">FAQ</a>
+                    <a href="">Cookie Preferances</a>
+                </div>
+                <div class="grid-list flex">
+                    <a href="">Help Centre</a>
+                    <a href="">Corporate Information</a>
+                </div>
+                <div class="grid-list flex">
+
+                    <a href="">Terms of Use</a>
+                </div>
+                <div class="grid-list flex">
+                    <a href="">Privacy</a>
+
+                </div>
+            </div>
+            <div class="dropdown-container">
+                <button class="lang-btn"><i class="fas fa-globe"></i>  English <i class="fas fa-angle-down"></i></button>
+                <ul class="language-dropdown">
+                    <li>English</li>
+                    <li>Hindi</li>
+                </ul>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- javascript  -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
