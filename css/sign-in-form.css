@@ -1,0 +1,350 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap');
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --btn-bg-color: #e50914;
+    --download-clr: #0071eb;
+    --div-partition-clr: #222;
+    --faq-bg-clr: #303030;
+    --text-clr: hsl(0, 0%, 100%);
+    --ff-primary: 'Merriweather', serif;
+    --fw-light: 400;
+    --fw-bold: 700;
+    --ff-secondary: 'Roboto Condensed', sans-serif;
+}
+
+
+/* TYPOGRAPHY  */
+
+h1,
+h2,
+h3,
+h4,
+p,
+a {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+a,
+button {
+    cursor: pointer;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.main-container h1 {
+    margin-bottom: 0.8em;
+    font-size: 2.35rem;
+    font-family: var(--ff-secondary);
+    letter-spacing: 0.5px;
+}
+
+.form-error-text {
+    color: #ff9900;
+    font-size: 0.85rem;
+    position: absolute;
+    top: 60px;
+    left: 0;
+}
+
+.main-footer p {
+    color: #959090;
+    margin-top: 1em;
+}
+
+.main-footer {
+    margin-top: 1.5em;
+}
+
+.login-facebook-main-footer a {
+    color: #959090;
+}
+
+.new-netflix-main-footer a {
+    color: var(--text-clr);
+    margin-left: 0.3em;
+}
+
+.learn-more-main-footer a {
+    color: var(--download-clr);
+    margin-left: 0.3em;
+}
+
+
+/* GENERAL STYLING  */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--ff-primary);
+    font-size: var(--fs-body);
+    font-weight: var(--fw-light);
+    color: var(--text-clr);
+    line-height: 1.3;
+    word-break: normal;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/background\ img.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    justify-content: center;
+    gap: 0.35em;
+}
+
+
+/* HEADER STYLING */
+
+.container {
+    width: 92%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    padding: 1em 0;
+}
+
+header .flex {
+    justify-content: space-between;
+}
+
+.logo {
+    font-family: var(--ff-secondary);
+    font-size: 3.35rem;
+    font-weight: var(--fw-bold);
+}
+
+.logo a {
+    color: var(--btn-bg-color);
+}
+
+
+/* MAIN STYLING - FORM  */
+
+.main-container {
+    background-color: rgba(0, 0, 0, 0.8);
+    align-items: stretch;
+    flex-direction: column;
+    width: 450px;
+    margin: 0 auto;
+    padding: 2em 3em 4em;
+    border-radius: 0.2em;
+}
+
+.form-control {
+    background-color: var(--faq-bg-clr);
+    display: flex;
+    flex-direction: column;
+    padding: 1.2em 0.8em;
+    margin: 0 auto;
+    border-radius: 0.3em;
+    margin-bottom: 3em;
+    position: relative;
+    box-shadow: inset 0 -2px 0 0 #ff9900;
+}
+
+.form-control input {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: var(--text-clr);
+}
+
+.form-control label {
+    font-size: 1rem;
+    font-weight: var(--fw-light);
+    color: #555454;
+    position: absolute;
+    pointer-events: none;
+    transform: translateY(0px);
+    transition: all 0.2s ease-in-out;
+}
+
+.form-control input:valid+label,
+.form-control input:focus+label {
+    font-size: 0.8em;
+    transform: translateY(-15px);
+}
+
+.form-control-formbtn {
+    background-color: var(--btn-bg-color);
+    padding: 0.8em 0;
+    cursor: pointer;
+    justify-content: center;
+    display: flex;
+    margin: 0 auto;
+    border-radius: 0.3em;
+}
+
+.form-control-formbtn input {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    color: var(--text-clr);
+}
+
+.support {
+    color: #959090;
+    justify-content: space-between;
+    margin-top: 1em;
+    font-size: 0.85rem;
+}
+
+input[type=checkbox]:checked {
+    background-color: var(--btn-bg-color);
+}
+
+.main-footer {
+    font-family: var(--ff-secondary);
+}
+
+.fa-facebook-square {
+    margin-right: 0.6em;
+    font-size: 1.2rem;
+    color: #12267c;
+}
+
+#readBtn {
+    background: transparent;
+    color: var(--download-clr);
+    border: none;
+    outline: none;
+}
+
+.new-netflix-main-footer a:hover,
+.learn-more-main-footer button:hover {
+    text-decoration: underline;
+}
+
+#read-more {
+    padding: 1em 0.5em;
+    color: #959090;
+    text-align: justify;
+    display: none;
+}
+
+
+/* FOOTER STYLING  */
+
+footer {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 3em 5em;
+    color: #555454;
+    width: 100%;
+    margin-top: 3em;
+}
+
+footer .grid-container {
+    margin: 3em 0;
+    align-items: flex-start;
+    gap: 0.5em;
+}
+
+.grid-list {
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.grid-list a {
+    color: #555454;
+    font-size: 0.8rem;
+    align-self: flex-start;
+}
+
+.grid-list a:hover {
+    text-decoration: underline;
+}
+
+footer .dropdown-container {
+    width: 105px;
+    border: 2px solid var(--faq-bg-clr);
+    padding: 0.5em;
+    border-radius: 0.15rem;
+    position: relative;
+}
+
+.lang-btn {
+    background-color: transparent;
+    border: none;
+    position: relative;
+    color: var(--faq-bg-clr);
+}
+
+.language-dropdown {
+    display: none;
+    width: 100%;
+    background-color: hsl(0, 0%, 0%);
+    position: absolute;
+    top: -42px;
+    text-align: center;
+}
+
+.language-dropdown li {
+    padding: 0.1em;
+    font-size: 0.85rem;
+    cursor: pointer;
+}
+
+.language-dropdown li:hover {
+    background-color: var(--download-clr);
+}
+
+footer .fa-globe,
+footer .fa-angle-down {
+    color: var(--faq-bg-clr);
+}
+
+
+/* MEDIA QUERIES */
+
+@media (max-width: 630px) {
+    /* header and nav styling  */
+    .logo {
+        font-size: 2.2rem;
+    }
+    /* Body styling  */
+    body {
+        background: black;
+        padding: 1em;
+    }
+    /* main styling  */
+    .main-container {
+        max-width: 100%;
+        padding: 1em 0;
+    }
+    /* footer styling  */
+    footer {
+        border-top: 1px solid #555454;
+        padding: 2em 0;
+    }
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
