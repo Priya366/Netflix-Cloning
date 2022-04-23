@@ -54,15 +54,22 @@ email.addEventListener('blur', () => {
     let regex = /^([_\-\.a-zA-Z0-9]+)@([_\-\.a-zA-Z0-9]+)\.([a-zA-Z]){2,7}$/;
 
     let str = email.value;
-
     if (regex.test(str)) {
+
         errorEmail.style.display = 'none';
         document.getElementsByClassName("form-control")[0].style.boxShadow = "none";
+        document.getElementsByClassName("form-control")[0].style.backgroundColor = "white";
+        email.style.color = "black";
+        document.getElementsByClassName("form-control")[0].style.border = "none";
     } else {
+        
         errorEmail.style.display = 'block';
-        document.getElementsByClassName("form-control")[0].style.boxShadow = "inset 0 -2px 0 0 #ff9900";
+        document.getElementsByClassName("form-control")[0].style.border = "1px solid #ff9900";
+        document.getElementsByClassName("form-control")[0].style.boxShadow = "none";
+        document.getElementsByClassName("form-control")[0].style.backgroundColor = "#303030";
+        email.style.color = "#555454";
     }
-})
+});
 
 password.addEventListener('blur', () => {
 
@@ -70,21 +77,19 @@ password.addEventListener('blur', () => {
     let errorPassword = document.getElementById('error-password');
 
     let regex = /^([\w+\W+\S][\d+\S]){4,60}/;
-
     let str = password.value;
-
-    console.log(str);
-
     if (regex.test(str)) {
         errorPassword.style.display = 'none';
         document.getElementsByClassName("form-control")[1].style.boxShadow = "none";
-
+        document.getElementsByClassName("form-control")[1].style.backgroundColor = "white";
+        password.style.color = "black";
     } else {
         errorPassword.style.display = 'block';
-        document.getElementsByClassName("form-control")[1].style.boxShadow = "inset 0 -2px 0 0 #ff9900";
+        document.getElementsByClassName("form-control")[1].style.border = "1px solid #ff9900";
+        document.getElementsByClassName("form-control")[1].style.backgroundColor = "#303030";
+        password.style.color = "#555454";
     }
-})
-
+});
 
 
 // LOGIN LEARN-MORE
