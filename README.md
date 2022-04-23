@@ -63,6 +63,7 @@ There were many things that I got in touch for the first time. Like:
 - Dropdown Language button.
 - Added Background videos to eloctronic images was bit difficult , but somehow, managed to do it. 
 - FAQ part : I was unable to make interactions completely similar to design . I did a lot of search and couldn't find a proper way on how to do it. So, did in my way.
+- Floating labels. 
 - Form validation . It was a fun part until you know how to do it. Otherwise, it's really frustrating. I messed up many times while designing error messages but it was a good to go as I learned a lot. 
 
 ## Author
