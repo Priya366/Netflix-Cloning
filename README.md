@@ -33,7 +33,7 @@ Users should be able to:
 
 ### Demo
 
-- Live Site : (https://netflix-c-hp.netlify.app/)
+- Live Site : https://clone-netflix-by-priya.netlify.app/
 
 ## My process
 
