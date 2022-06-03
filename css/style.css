@@ -415,7 +415,7 @@ section {
 .footer {
     background-color: hsl(0, 0%, 0%);
     border-top: 10px solid var(--faq-bg-clr);
-    color: var(--div-partition-clr);
+    color: #333;
     padding: 2em;
 }
 
@@ -436,7 +436,7 @@ section {
 }
 
 .grid-list a {
-    color: var(--faq-bg-clr);
+    color: #333;
     font-size: 0.8rem;
     align-self: flex-start;
 }
