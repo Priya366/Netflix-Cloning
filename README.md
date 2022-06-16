@@ -68,4 +68,4 @@ There were many things that I got in touch for the first time. Like:
 
 ## Author
 
-- Twitter - [@Priyaga89393017](https://twitter.com/Priyaga89393017)
+- Twitter - [@Priyaga89393017](https://twitter.com/priya_garg2)
